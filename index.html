@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="image/pngwing.com.png"></div>
+            <input type="search" placeholder="search Facebook">
+            <div>
+                <ul class="nav">
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAExklEQVR4nO1YW4hcRRC9PhGNb9EoogjGR3ytJuArEAVF//wQFQVjFL98oCDRD5XViBr8SvRLRIjGqLk409XVPbfqzoqTr0RxBWM0RggYjPGFmAcx0URdqbszs7V3Z+707Gs2sAcuw8x0VZ/urlt1qqNoFrOYOfDezy1jsti56rzocEEpSc41SO+B43/A8VD92QA+vTaaqYjj+Fhw9IRxvFeRbj4G6T9w/G6plJ4ZzSRYS3cA8rYc2UMGicDRrtG/8x+A9Ggcx0f1lHS5UrkIkCstdnq9tcmVMiZmPs04XgWO/x01BunLMiaLpp10mqYnGEcvGOS/crv6IzheMjQ0dETexvh0gXG8sVUoee/nTjlpISXkDPLPuZ3eD0gr4rg2p8i+v7//SLEH5N9yi9gnmyHvzZQQl53LssaYECFnbXpBN76896fWQ0lnpCHjeKu1fOukkY4HBk42SG/Xj1hP9A14umUivk2bUDLIa2SBEyJecnwVIG/P7fQuSYm1Wu3oaBLQPxxKD4GjX3Pz/IBI14zLadlXL83FpmSLt6YqT3sJJaQ3RocS/Q6QzO/KkeRgg/T5SIjQL+D55mgaUMZkESD/pFLqoJxOsAODfI+K7b2mUrkimkZYS5fpSm093RVsLLlX7frTUQ9gPD+jXuJ3gg0B+avmqi1fGPUAzlXnqdPfFGyoixAiHh/1AHFcm6NOf2d4FUU62Kh8UQ9hkA7UF/B3K8nRMmWNvOm8PeohAHlHg0uSJCd1NPjI+/O18ot6CEDa3OAiTU5HA8SB82YKeeP46yYXqJ7T0UBWqMhvjnoIQNrS4BIkm0tEZyvyW8ar9xH5EmvTGzOZAXDiePwYx1ubYRMiSxDxDPXCbguZ5M3BwWOM5xsAeXmmNlv0sID8nWj+MtL1oaIOHH/fsJeOrKOB6AjpP7tJlYDMLQm3e5ArgeT31yPgYLC+qbdzQSlKithYrU/fGuTYIK8Ex+t07DY0O3YofsbUTtHyOIj4MPkRRSmxWzQWILlah1mj8c6j5NLL9Q2D8WlfB7/z1WI/DSYPjlBpm8K2zCDfp3bow2K/vK4xtmzp3kK/jm5Tfk0weeP4NSWKngpWf45fKiSP/LLKZMuKx9IyFYavBpOXXRk5Ml4TSshg8kjRWOP5cRViywv9OlqrTunucPKSmwMLVb11Gw4xlz5QONbSUnVKq8KrK13cXRvo+M/6y3KoXB44vd1YQHo9tOORHVQnurKo1uh03VUbmJFylKoj7i8gv0JlhfuLffISRf6VduPkAkrNzVG3kF1UpA4AVBe2mej50Ji3jh9TpJ5tuUCoLlQ6XhZ553iv9taryXbIPc6YyZAfDDmh+kJfbJKytHTM/z7t0xreIH0S1IS0grUfn5Vztk8unHR1NI5uUvl4bSF5pA+aGQSTxaOqtOMnh/2PVNUJ3xHJbkgPObq88x5A+kzIGKTVKoNskmZGurHGpal8yvesyVGNvUFanS0m88N7cvJiZ6cKHAxpBKREdyW+xvkYubsMaTy6gchYg/Sw3GBNCXGkQfE/WXegbSHa2nq+HZCey0LH8ReAtDuQ5O5svOP3xV78BGn1qUatVjtOeuDsPfHpAmuT67JrbJ/2ye/yf685zmIW0WGM/wFTHaewFUc+FQAAAABJRU5ErkJggg=="></li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQklEQVR4nO2YPU7DQBCFDeI8FFTQUxGQaDhPKjgNyoxnrLyhwbX5aeg4BUVAkAIWORAXEUi2YmWz1nzSlLbe57cr7TrLHMdxHGeITHI7JbU7VpuzWog080WGAqPO4SOGDn8NiZ23FiDBfezAvDqCqrVA5GUT/mngo4tA2MbJXEAH3gCJFaTGJPhKToAEryGEnfp5ERywYpqUACteVt8zERyxWJmswBIucExqj8kK1NTLKy9wwWLPSQosKctyjwRwgRhLiOTmjMWektzELHhIbhPn+fSQBLfrBudNCJDa23g83v0Nvs8K7Ss4b6aBRQvXP2OffYdnP41q/1+UvYGhXikp+Ut9gdHWNaDTk9YCjYSgiv1jiwVV5/CO0xESuyLBe+yNym03dJ1V7LI5p7NiFjsUdx7MmgZqm2QbcBzHcbI1+AaCUdxbJ/QMMQAAAABJRU5ErkJggg=="></li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACHElEQVR4nO1YvW4UMRA2ilDET6ihoSHQQBNFok7FG/AEkYBXoMtbQKTUQbKU8+zMxjMLxVWkOqWBCq7JC0SK+JGSIosmIXeb6G7JifHlEP6kKdb2fJ+/9XjXu85lZGRkZGT8L+iQPAXkj0ByCCS1cRwqt2okmfwW872Asp9g4nUzVEO1zA0E5JepJw9nJsrqhb0B4rWGyKb3fs6K23s/F5DfDQwQr7mUBlIIhMT8Dkg2BgJFXLXmD0Vcbazwhim5993bAeXglJy/xRjvmAq4xBoXNvBblwiAvJ5kIwNyr0G87BIhlNXy4EYh98yIm484M9JpakELqff+xri89V7vusa4fj8iN7mBGOM84of7Haye6X4IJD8CyRu91vaqqm4BxCVAfhVIPgPyp5M9BHFJ+9pyY4zzyQ1MM5yZAeSjFqGfY/s07y9ynRWKkp8PD1t8HIj3gLjS0kDEm1ouJ9fEewH5eyDZ1dIoCn68RdWT3+Wye9rXmnt8pqOaZgYC8crwzkjXJQKgdBvHiRUz4mxgllegKGQRUPrnN6D0tX2SMVdngPj1qKeItk8y5soMXPjQqUed6S8zRpENpCqhmV6BopDFQPz13MSQv3RifPBPGLgMsgHjFegDwMKE+X8sIQBYaL4rTEuos739KMVxGVqC6P1DMwN1XV8Dkp0pGthRTWeJsizvBhQ//PVhHwHlQDVUy3TyGRkZGRkZbkbxC6lXaJ1wQcqjAAAAAElFTkSuQmCC"></li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEp0lEQVR4nO1YXahUVRQ+Zv8JlVmZXKNf+ieoh4KgonrJih4jKHsQegv6eQgsvFQiBP089AOGCkVCHJxZ+6y13WudOzfmhj1oXlKRpAf7M7kVVhKWoqkT68yeOefOnHHmjnPnQpwPNsw5s/ba3957/Z4gKFCgQIECBf6vCMPw7JJzI5ts5ZpeR8m5EZ03Z6QRK1ca4o2G5LAhqfUxDgPypwCydMjE5UYg/lVJAMqfhmQCUCq9DkMyYYgP+vm/qL4hEcfzDfLu+sL8Xr/X75w7R+cnt4C8W/UGsw1AXl+/dsZarTbv9PVJyZvRusEw7LzQE8mJE/8UiiwciE6oXgTE3/ubfDoYJKJo/PKI4meA5G1DfMhf8w5ACQc1DPIOf5uHdB1dr1SKL+v/RDZvvg1QIkNyvM9ocloDkP8FElOi+NaeSY+Ojp5hUEYNyQl/yt8ByppyJI+WSG6fSTyf6UDkOwDjxwzKm7qu38hxg7JKeXUnXo/deoW/G5LlYRjOD+YAYRjOh8itAJIDns/GU26gbtfJae8ZZvKIovgeQLEaeaKIb8n+pzcCJN94Xm91IM73A/JJgzJlrV08LOKhyEJA+Su1d95XrVbPnMYNZKkmMzXlMrr72skjb9XJZYwfDoaIKHJ3e+ITjRPOu3X1Oe/IW3MVAPIXnRYBG9+ZbNDwDYMkH8fxBYCyvxllSHZ1Sn6GZIvKKN/0JcrrycTIrehInuSlbjK9wlq72Fh+qFyuXJLoBr5K7RmIV4fOXZpwMmNLVMZae3GTg42f9Rt8IyVWL5ZqqmS2ySfOSfKPd8A/8uJ4FMUPAPIR7wO/EY1d799f7W9ovCms0cWQHG0NRcbGdwHxlwZ50qD8XF9QftRnNTFNZDMlDyhlr0f8Bta2yqT/NWXe1fdrJyfPSvIP8p6s8F7daauScsRPaqbrkAWPGsuPzJS8IfnEE9vr66R32mV4U4vM6nTzfETfp6dB8pWGyTCsLshzKLU7g/xqosjKc/rcbwnr4/a3/kR3lpivaJXR+r5JHHk7Ii5qhNXGuwx53pAos/G9w3DYWq02r0Eo0Y3uQSD+3BA7LRH0nZpwVkahDuzJr09fkiz3Xvx+pwWjiB/XOkOTWTBAIOIiQP67aY4oU2rbebKG5IMkF1n31DTT0LZMM52WwJ0WyjOr2UhSJedG2oibsSX1KMUHle/0P1FW+dD0Wb9EgNwyjcUdB7lluW0lyQ+ZUnh7a5LS54wTj7YtXK1Wz/UhM1+gC9LNd6nTM5GjgSQhaaJEeUU7q6AFOqdRMCrPIA9l565tlKCA/FEvZhKG4Xkq2yijgXglWHm5bRCv9GV2XXelcmF33dUFgPyx98cDUSTXnXJC2Y7dlIYp2W8wfiHPDzTEAcnzaV3C+7p1PZrUMsluSiNYnn1rYWaQX2x8XkkaE+NuDnqBxnGNPNNawPqGxg1K1f9OOi2fxNb1cpKZhntDRvcJbeh90bWl3rnxybSL4g+z9U3P0FoCiF8zyNuSjJrJrkDytdqiyvSdrFDWJM038rH0kPiYOq36gJpxMAjoxyU9Ae3qB/G9JgtNSGqGqn9Ov2EWKFCgQIECwYDwH/Xc35SHRxnGAAAAAElFTkSuQmCC"></li>
+                </ul>
+            </div>
+            <div class="nav2">
+                <ul>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAACXBIWXMAAAsTAAALEwEAmpwYAAADMElEQVR4nO2ZS05VQRCGeVwTjESM4BJ4mKiRx0wciK4EGAAhmohEwQ0ggTBGFBzgUMEBKupKRCYighF1BfKZyi2Spqlzum8DCcTzTwihquvvOl1PqqoKFChQ4EQAuAQ8Bt4AS8ADoCGgcweYA94CT4HbAfkLwKieL3bGgabDEr8J/OIgvgPthnwt8AIbz4EaQ6cD2DLkd4Duw3jcIr6HDaDe0xGP5eGhJ18PfMuR30n6AvpUQhhw5M8ELrtHpuToDEXYGEshvxxx8Lwj30YcWh2dhQj5pRTyryMOfubIt0SSb3Z0JA5CeJVCXrJKCL1esG4H5LfcoAX6ImzcTyHfoFklC5+BOk/nboDIkCdfB3zJkZdgPl8xeT28XbOKRbzVkK8GpoFdT15+n8yw0QasGTa+AteTiHvpbECDS95or+9xQ6cTeAIsAhNWTTC+QJ+ev6D2zu0TKnDaAJT0bUo6rI3UaQKuxVZIytmqVe2UjoJ0rZb8304gbWtWqc7QuQx8coL2L/DBCnAnyO8BPxwbUqnHrF4oGjlNlmA6g/ifDHlxQIuhMxNTwSslLm1tHsSzHZ7Ox4DOqiffZaRVHz0p5KUfD2HCe+MhIvKEGh2dyQgbsynkVyIOXnTkrxKHK46O1IEQVlLIywRUqefFs3mQv190dKSQHYvnewKH7vqVU7NKHt4ZU9RuQOdWxeQjWtYDvYrmaTet4qW/ZkNnKsfGXBJxPbhGRjedgNy2dl93aFxg1XlC8vO9RdzJ88NeO72jA3l6njcqbHPsgZJVNIgbK3BUi9qJquIFTiwo9/ND2irMa98d6ue7tAC91HTYGZA/C/Tr+WJn0F+rpBDvyNiryOjWlhF8MxmT1JTVzFF+4+uGjY3QEBNawVmbrD2sGTOsdId5GDY8vp4jvxlaLWaRl1RV6fbAbWtjtgf9ETZG/ru9zfJp3piNV7irLEXsKn96u8rB49pVNnltgbVX2bee0NEtD6NGGt4IXDaqQlsX6M64wKa1ENISL7nawlzGfr49YzMnxG8kEfe+wJjGgATxSGgFJ/8J0XlABprZUFtLebU4oueLnUfJHi9QoECBqqPGP9U9vy9GWM91AAAAAElFTkSuQmCC"></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="47" height="47" viewBox="0,0,256,256"
+                        style="fill:#000000;">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.69922,0 -23,9.60156 -23,21.5c0,6.30078 2.89844,12.19922 8,16.30078v8.80078l8.60156,-4.5c2.09766,0.59766 4.19922,0.79688 6.39844,0.79688c12.69922,0 23,-9.59766 23,-21.5c0,-11.79687 -10.30078,-21.39844 -23,-21.39844zM27.30078,30.60156l-5.80078,-6.20312l-10.80078,6.10156l12,-12.69922l5.90234,5.89844l10.5,-5.89844z"></path></g></g>
+                        </svg></li>
+                    <li>Notifications</li>
+                    <li>profile</li>
+                </ul>
+            </div>
+        </div>
+        <div class="aside">
+            <div>Mohamed Hesham</div>
+            <div>Friends</div>
+            <div>Feeds</div>
+            <div>Groups</div>
+            <div>Market Place</div>
+            <div>Video</div>
+            <div>Memories</div>
+            <div>see more</div>
+            <hr>
+        </div>
+        <div class="main">
+            <div class="story">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="start">
+                <div class="photo">photo</div>
+                <div class="search"><input type="search" placeholder="What's in your mind?"></div>
+                <div class="hr"><hr></div>
+                <div>Live video</div>
+                <div>Photo/Vedio</div>
+                <div>Feelings/Activites</div>
+            </div>
+            <div class="post1">
+
+            </div>
+            <div class="post2">
+
+            </div>
+            <div class="post3">
+
+            </div>
+            <div class="post4">
+
+            </div>
+        </div>
+        <div class="b_aside">
+            <div class="title">
+                <h3>
+                  your pages and profiles
+                 </h3>
+        </div>
+            <div class="pages">
+                <h4>page1</h4>
+                    <ul>
+                        <li> Messanges</li>
+                        <li> Switch into page</li>
+                        <li> Create promotion</li>
+                    </ul>
+                <h4>page2</h4>
+                    <ul>
+                        <li> Messanges</li>
+                        <li> Switch into page</li>
+                        <li> Create promotion</li>
+                    </ul>
+                <hr>
+            </div>
+            <div class="birthday">
+                 <h4>Birthday</h4>
+                    <p>Mohsen and 2 others have their birthday today.</p>
+            </div>
+                <div class="contacts">
+                    <h4>Contacts</h4>
+                        <ul>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                            <li>Mohsen benafso</li>
+                        </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
