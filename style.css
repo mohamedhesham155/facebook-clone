@@ -6,6 +6,8 @@
 }
 html{
     background-color: rgb(24,25,26);
+    width: 200vh;
+    margin: auto;
     
 }
 
@@ -205,4 +207,45 @@ html{
     line-height: 50px;
     font-size: 28px;
 }
+  /* Media Query for Mobile Devices */ 
+  @media (max-width: 480px) { 
+    body { 
+        background-color: red; 
+    } 
+} 
+  
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px) and (max-width: 767px) { 
+    body { 
+        background-color: yellow; 
+    } 
+} 
+  
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+    .main .start .search input{
+        width:250px;
+        height: 50px;
 
+    
+    }
+}
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+    .main .start .search input{
+        width:325px;
+        height: 50px;
+
+    
+    }
+} 
+  
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+    .main .start .search input{
+        max-width:400px;
+        height: 50px;
+
+    
+    }
+} 
